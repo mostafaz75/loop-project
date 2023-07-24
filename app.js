@@ -2,12 +2,20 @@
 function sum(array){
   let num = 0
   for (let i = 0;i<array.length;i++){
-    num += array[i];
+    
+    if (typeof(array[i])=== 'string'){
+
+      console.log(array[i]+ ' ');
+    }
+    if(typeof(array[i])=== 'number'){
+
+      num += array[i];
+      
+    }
   }
    console.log(num);
-
 }
-sum([10,5,90,9,8]);
+sum([10,5,"ali",90,9,8,'momo',5,56,23,1]);
 
   function avg(array) {
       let sum = 0;
